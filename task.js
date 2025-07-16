@@ -4,6 +4,8 @@ let body = document.querySelector("body");
 // ---- Student -----
 let hero = document.getElementById("hero");
 let formbox = document.getElementById("forms");
+let navbar = document.getElementById("navbar");
+let hamburger = document.getElementById("ham");
 
 let isOn = false;
 function darkMode() {
@@ -15,6 +17,8 @@ function darkMode() {
     formbox.style.background = "#1A1A1B";
     formbox.style.color = "#fff";
     store.style.background = "#1A1A1B";
+    navbar.style.background="#000";
+    hamburger.style.color="#fff";
 }
 function lightMode() {
     body.style.background = "white";
@@ -26,6 +30,8 @@ function lightMode() {
     formbox.style.background = "#fff";
     formbox.style.color = "#000";
     store.style.background = "#fff";
+    navbar.style.background="#fff";
+    hamburger.style.color="#000";
 }
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -122,3 +128,9 @@ function deleteTodo(e) {
     localStorage.setItem("todoList", JSON.stringify(todo));
     addTodo();
 } 
+
+// --- toogle --- 
+document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("nav-list").classList.toggle("show");
+    
+});

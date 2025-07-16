@@ -3,6 +3,8 @@ let night = document.getElementById("night");
 let body = document.querySelector("body"); 
 // ---- Student -----
 let hero2 = document.getElementById("hero");
+let navbar = document.getElementById("navbar");
+let hamburger = document.getElementById("ham");
 
 let isOn = false;
 function darkMode() {
@@ -27,11 +29,15 @@ window.addEventListener("DOMContentLoaded", () => {
         darkMode();
         // Index Page 
         hero.style.background = "#000";
+        navbar.style.background="#000";
+        hamburger.style.color="#fff";
  
         isOn = true;
     } else {
         lightMode(); 
         hero.style.background = "#fff"; 
+        navbar.style.background="#fff";
+        hamburger.style.color="#000";
         isOn = false;
     }
 });
@@ -41,6 +47,8 @@ day.addEventListener("click", () => {
     if (isOn) {
        lightMode(); 
         hero.style.background = "#fff"; 
+        navbar.style.background="#fff";
+        hamburger.style.color="#000";
         localStorage.setItem("mode", "light");  // 💾 save
         isOn = false;
     }
@@ -51,6 +59,8 @@ night.addEventListener("click", () => {
     if (!isOn) {
         darkMode();  
         hero.style.background = "#000"; 
+        navbar.style.background="#000";
+        hamburger.style.color="#fff";
         localStorage.setItem("mode", "dark");   // 💾 save
         isOn = true;
     }
@@ -82,3 +92,9 @@ addStudent();
 //     localStorage.setItem()
 // }
 // deleteStudent();
+
+// --- toogle --- 
+document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("nav-list").classList.toggle("show");
+    
+});

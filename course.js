@@ -4,6 +4,8 @@ let body = document.querySelector("body");
 // ---- Courses -----
 let hero = document.getElementById("hero"); 
 let cbox = document.querySelectorAll(".cbox");
+let navbar = document.getElementById("navbar");
+let hamburger = document.getElementById("ham");
 
 let isOn = false;
 function darkMode() {
@@ -16,6 +18,8 @@ function darkMode() {
         cb.style.background="#1A1A1B";
         cb.style.color="#fff";
     })
+    navbar.style.background="#000";
+    hamburger.style.color="#fff";
 }
 function lightMode() {
     body.style.background = "white";
@@ -28,6 +32,8 @@ function lightMode() {
         cb.style.background="#fff";
         cb.style.color="#000";
     })  
+    navbar.style.background="#fff";
+    hamburger.style.color="#000";
 }
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -63,4 +69,10 @@ night.addEventListener("click", () => {
         localStorage.setItem("mode", "dark");   // 💾 save
         isOn = true;
     }
+});
+
+// --- toogle --- 
+document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("nav-list").classList.toggle("show");
+    
 });

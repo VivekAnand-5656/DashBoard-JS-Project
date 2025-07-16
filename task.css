@@ -133,3 +133,50 @@ form button:hover{
     color:green;
     font-size:0.9rem;
 }
+/* ============ Mobile View ============= */
+@media (max-width: 768px) {
+     body{
+        flex-direction: column;
+    }
+    .hero{
+        width: 100vw; 
+        height: auto;
+        margin-top:10vh;
+    }
+    .up-row{
+        border:1px solid #000; 
+        padding:0.2rem;
+    }
+    .up-row h1{
+        font-size:1rem;
+    }
+    .up-row span{
+        font-weight:200;
+    }
+    .left-dash{
+        width: 80%;
+    }
+    .left-dash img{
+        height: 100%;
+    }
+    /* Forms */
+    .forms{
+        width: 100vw;
+    }
+    form{
+        flex-wrap: wrap;
+    }
+    .input{
+        width: 100%;
+    }
+    form button{
+        width: 20%;
+        padding: 0.5rem;
+    }
+    .result{
+        flex-wrap: wrap;
+    }
+    .tasks{
+        width: 100%;
+    }
+}

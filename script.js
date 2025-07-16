@@ -9,6 +9,8 @@ let updates = document.getElementById("updates");
 let anrow = document.querySelectorAll("#anrow");
 // ---- Student -----
 let hero2 = document.getElementById("hero2");
+let navbar = document.getElementById("navbar");
+let hamburger = document.getElementById("ham");
 
 let isOn = false;
 function darkMode() {
@@ -17,6 +19,7 @@ function darkMode() {
     day.style.background = "none";
     night.style.background = "#5bb3b3";
     day.style.color = "white";
+
 }
 function lightMode() {
     body.style.background = "white";
@@ -25,6 +28,7 @@ function lightMode() {
     day.style.background = "#5bb3b3";
     night.style.color = "black";
     night.style.color = "black";
+
 }
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -41,6 +45,8 @@ window.addEventListener("DOMContentLoaded", () => {
         anrow.forEach((an) => {
             an.style.background = "#1A1A1B";
         })
+        navbar.style.background = "#000";
+        hamburger.style.color = "#fff";
         // --- Student --
         // hero2.style.background="#000";
 
@@ -57,6 +63,8 @@ window.addEventListener("DOMContentLoaded", () => {
         anrow.forEach((an) => {
             an.style.background = "#fff";
         })
+        navbar.style.background = "#fff";
+        hamburger.style.color = "#000";
         // --- Student ---
         // hero2.style.background="#fff";
 
@@ -67,7 +75,7 @@ window.addEventListener("DOMContentLoaded", () => {
 // 🌞 Day mode button
 day.addEventListener("click", () => {
     if (isOn) {
-       lightMode();
+        lightMode();
         // ------ index ---
         hero.style.background = "#fff";
         tbox.forEach((box) => {
@@ -78,6 +86,8 @@ day.addEventListener("click", () => {
         anrow.forEach((an) => {
             an.style.background = "#fff";
         })
+        navbar.style.background = "#fff";
+        hamburger.style.color = "#000";
         // ---- Student ----
         // hero2.style.background="#fff";
         localStorage.setItem("mode", "light");  // 💾 save
@@ -88,7 +98,7 @@ day.addEventListener("click", () => {
 // 🌙 Night mode button
 night.addEventListener("click", () => {
     if (!isOn) {
-        darkMode(); 
+        darkMode();
         // -- index----
         hero.style.background = "#000";
         tbox.forEach((box) => {
@@ -99,6 +109,8 @@ night.addEventListener("click", () => {
         anrow.forEach((an) => {
             an.style.background = "#1A1A1B";
         })
+        navbar.style.background = "#000";
+        hamburger.style.color = "#fff";
         // ---- Student ----
         // hero2.style.background="#000";
 
@@ -108,7 +120,8 @@ night.addEventListener("click", () => {
 });
 
 
-// --- toogle ---
+// --- toogle --- 
 document.getElementById("menu-toggle").addEventListener("click", () => {
-  document.getElementById("nav-list").classList.toggle("show");
+    document.getElementById("nav-list").classList.toggle("show");
+    
 });

@@ -4,6 +4,8 @@ let body = document.querySelector("body");
 // ---- Galery -----
 let hero = document.getElementById("hero"); 
 let fbox = document.getElementById("f-box"); 
+let navbar = document.getElementById("navbar");
+let hamburger = document.getElementById("ham");
 
 let isOn = false;
 function darkMode() {
@@ -14,6 +16,8 @@ function darkMode() {
     day.style.color = "white";  
     fbox.style.background="#1A1A1B"; 
     fbox.style.color="#fff"; 
+    navbar.style.background="#000";
+    hamburger.style.color="#fff";
 }
 function lightMode() {
     body.style.background = "white";
@@ -24,6 +28,8 @@ function lightMode() {
     night.style.color = "black"; 
     fbox.style.background="#fff";
     fbox.style.color="#000";
+     navbar.style.background="#fff";
+    hamburger.style.color="#000";
 }
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -77,4 +83,10 @@ form.addEventListener("submit", (ev) => {
     form.reset();
     alert("Student added !");
 
+});
+
+// --- toogle --- 
+document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("nav-list").classList.toggle("show");
+    
 });

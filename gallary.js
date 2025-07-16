@@ -4,6 +4,8 @@ let body = document.querySelector("body");
 // ---- Galery -----
 let hero = document.getElementById("hero");
 let pbox = document.querySelectorAll("#p-box") 
+let navbar = document.getElementById("navbar");
+let hamburger = document.getElementById("ham");
 
 let isOn = false;
 function darkMode() {
@@ -15,6 +17,8 @@ function darkMode() {
     pbox.forEach((pb)=>{
         pb.style.background="#1A1A1B";
     });
+    navbar.style.background="#000";
+    hamburger.style.color="#fff";
 }
 function lightMode() {
     body.style.background = "white";
@@ -26,6 +30,8 @@ function lightMode() {
     pbox.forEach((pb)=>{
         pb.style.background="#fff";
     });
+     navbar.style.background="#fff";
+    hamburger.style.color="#000";
 }
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -61,4 +67,10 @@ night.addEventListener("click", () => {
         localStorage.setItem("mode", "dark");   // 💾 save
         isOn = true;
     }
+});
+
+// --- toogle --- 
+document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("nav-list").classList.toggle("show");
+    
 });
