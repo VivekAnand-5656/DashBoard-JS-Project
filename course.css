@@ -1,0 +1,79 @@
+.hero{
+    width:calc(100vw - 20vw);
+    height: 100vh;
+    padding:0.5rem;
+    display: flex;
+    flex-direction: column;
+    background: transparent; 
+    text-align: center;
+}
+.up-row{
+    width: 100%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.left-dash{ 
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem; 
+    margin-left: auto;
+}
+.left-dash img{
+    width:15%;
+}
+.btns{
+    /* background: #E3F4F4; */
+    border-radius:5px;
+    padding:0.3rem 0.5rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap:0.2rem;
+}
+.btn{
+    border: none;
+    color:#fff;
+    padding:0.2rem;
+    border-radius:0.2rem;
+    cursor: pointer;
+}
+.day{
+    background: #5bb3b3;
+}
+.night{
+    color:#000;
+}
+.up-row p{
+    font-size:0.9rem;
+}
+.up-row span{
+    font-weight: 800;
+}
+/* Courses */
+.course{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding:0.5rem;
+    gap:1rem;
+}
+.cbox{
+    width: 10%;
+    height:100px;
+    background: #fff; 
+    box-shadow:1px 1px 5px #a2f2f2;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all ease-in-out 0.3s;
+    cursor: pointer;
+}
+.cbox:hover{
+    transform: scale(1.1); 
+}

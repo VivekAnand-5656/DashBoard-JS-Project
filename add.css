@@ -1,0 +1,103 @@
+.hero{
+    width:calc(100vw - 20vw);
+    height: 100vh;
+    padding:0.5rem;
+    display: flex;
+    flex-direction: column; 
+    background-image: linear-gradient(to right, #fafafa, #f7f9fc, #f2f8fd, #ecf8fc, #e6f8f8);
+}
+.up-row{
+    width: 100%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.left-dash{ 
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem; 
+    margin-left: auto;
+}
+.left-dash img{
+    width:15%;
+}
+.btns{
+    /* background: #E3F4F4; */
+    border-radius:5px;
+    padding:0.3rem 0.5rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap:0.2rem;
+}
+.btn{
+    border: none;
+    color:#fff;
+    padding:0.2rem;
+    border-radius:0.2rem;
+    cursor: pointer;
+}
+.day{
+    background: #5bb3b3;
+}
+.night{
+    color:#000;
+}
+.up-row p{
+    font-size:0.9rem;
+}
+.up-row span{
+    font-weight: 800;
+}
+/* Forms */
+.student-form{
+    width: 80%;
+    background: #fff;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    padding:1rem; 
+    border-radius:10px;
+    box-shadow:2px 2px 10px #c3c3c3;
+    color:#000;
+}
+form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0.5rem;
+    row-gap:1rem;
+    line-height:0;
+} 
+form input{
+    margin: auto;
+    width: 100%;
+    height:40px;
+    padding:0.5rem;
+    border-radius:5px;
+    border:1px solid #014d4f;
+    outline: 0;
+}
+form button{
+    width: 35%;
+    height: 30px;
+    margin: auto;
+    border: none;
+    background: #03bfc3;
+    color:#fff;
+    font-weight: 600;
+    border-radius:5px;
+    cursor: pointer;
+    transition:all ease-in-out 0.3s;
+}
+form button:hover{
+    background: #014d4f;
+
+}

@@ -1,0 +1,135 @@
+.hero{
+    width:calc(100vw - 20vw);
+    height: 100vh;
+    padding:0.5rem;
+    display: flex;
+    flex-direction: column;
+    background: transparent; 
+}
+.up-row{
+    width: 100%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.left-dash{ 
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem; 
+    margin-left: auto;
+}
+.left-dash img{
+    width:15%;
+}
+.btns{
+    /* background: #E3F4F4; */
+    border-radius:5px;
+    padding:0.3rem 0.5rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap:0.2rem;
+}
+.btn{
+    border: none;
+    color:#fff;
+    padding:0.2rem;
+    border-radius:0.2rem;
+    cursor: pointer;
+}
+.day{
+    background: #5bb3b3;
+}
+.night{
+    color:#000;
+}
+.up-row p{
+    font-size:0.9rem;
+}
+.up-row span{
+    font-weight: 800;
+}
+/* Forms */
+.forms{
+    width:80%;
+    margin:0 auto;
+    border-radius:10px;
+    box-shadow: 2px 2px 5px #cfd0d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    row-gap:1rem; 
+    color:#000;
+    background: #fff;
+} 
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+ }
+.input{
+    width: 70%;
+    height:40px;
+    padding:0.5rem;
+    border:2px solid #00ffff;
+    border-radius:5px;
+}
+form button{
+    width: 10%; 
+    background: #0fd4d4;
+    border: none;
+    font-weight:600;
+    color:#000;
+    border-radius:5px;
+    transition:all ease-in-out 0.3s;
+    cursor: pointer;
+}
+form button:hover{
+    background: #038585;
+    color:#fff;
+}
+.result{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    border-top:1px solid #666a6a;
+}
+/* --- Show ---- */
+.tasks{
+    width: 80%;
+    background: #fff; 
+    margin:10px auto;
+    padding:0.5rem;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.msg-row{
+    width: 100%;  
+    padding:0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom:1px dashed #00ffff;
+}
+.del{
+    padding:0.5rem;
+    background: none;
+    color:red;
+    border: none;
+    font-size:1.3rem;
+    cursor: pointer;
+}
+.msg{
+    color:green;
+    font-size:0.9rem;
+}

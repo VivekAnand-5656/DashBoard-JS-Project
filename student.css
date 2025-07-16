@@ -1,0 +1,87 @@
+.hero{
+    width:calc(100vw - 20vw);
+    height: 100vh;
+    padding:0.5rem;
+    display: flex;
+    flex-direction: column;
+    background: transparent; 
+}
+.up-row{
+    width: 100%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.left-dash{ 
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem; 
+    margin-left: auto;
+}
+.left-dash img{
+    width:15%;
+}
+.btns{
+    /* background: #E3F4F4; */
+    border-radius:5px;
+    padding:0.3rem 0.5rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap:0.2rem;
+}
+.btn{
+    border: none;
+    color:#fff;
+    padding:0.2rem;
+    border-radius:0.2rem;
+    cursor: pointer;
+}
+.day{
+    background: #5bb3b3;
+}
+.night{
+    color:#000;
+}
+.up-row p{
+    font-size:0.9rem;
+}
+.up-row span{
+    font-weight: 800;
+}
+/* Tbales */
+.student-lists{ 
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    padding:2rem; 
+}
+.tab{
+    /* background: #fff; */
+    padding: 1rem;
+}
+.st-lists{
+    width: 100%; 
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+}
+caption{
+    font-size:2rem;
+    font-weight:600;
+}
+ 
+.st-lists th,td{ 
+    border:1px solid #a39f9f;
+    padding:0.3rem;
+}
+.st-lists th{
+    background:#5bb3b3;
+    color:#fff;
+}
+.st-lists td{
+    font-size:0.9rem;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="task.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="row">
+            <img src="./picture/codingAge-removebg-preview.png" alt="">
+            <h1>CODING <span>AGE</span></h1>
+        </div>
+        <ul class="lists">
+            <li><a href="./index.html"><i class="ri-dashboard-horizontal-fill"></i> Dashboard</a></li>
+            <li><a href="./studetn.html"><i class="ri-team-fill"></i> Students</a></li>
+            <li class="active"><a href="./task.html"><i class="ri-list-check-3"></i> Tasks</a></li>
+            <li><a href="./gallary.html"><i class="ri-gallery-fill"></i> Gallary</a></li>
+            <li><a href="./courses.html"><i class="ri-contacts-book-3-fill"></i> Courses</a></li>
+            <li><a href="./add.html"><i class="ri-add-box-fill"></i> Add Student</a></li>
+        </ul>
+        <a href="" class="logout"><i class="ri-logout-box-r-line"></i> Logout</a>
+    </nav>
+    <!-- Main -->
+    <main>
+        <div id="hero" class="hero">
+            <!-- Top -->
+            <div class="up-row">
+                <div class="left-dash">
+                    <div class="btns">
+                        <button id="day" class="btn day"><i class="ri-sun-fill"></i></button>
+                        <button id="night" class="btn night"><i class="ri-moon-fill"></i></button>
+                    </div>
+                    <p>Hey, <span>Vivek Anand</span></p>
+                    <img src="./picture/user_11851046.png" alt="">
+                </div>
+            </div>
+            <!-- Form -->
+            <div id="forms" class="forms">
+                <h2 id="heading">To Do List</h2>
+                <form action="" id="form">
+                    <input type="text" id="text" class="input " placeholder="Add Task" id="text">
+                    <button type="submit">Add</button>
+                    
+                </form>
+                <p class="msg" id="msg"></p>
+                <div class="result">
+                    <label for="">Completed : </label>
+                    <p id="comp"></p> |
+                    <label for="">UnCompleted : </label>
+                    <p id="uncomp"></p>
+                </div>
+            </div>
+            <div class="tasks" id="tasks">
+                <!-- <div class="row">
+                    <input type="radio" id="radio" name="radio" class="check">
+                    <p>hhhh</p>
+                    <button id="del" class="del"><i class="fa-solid fa-trash"></i></button>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <!-- Js -->
+    <script src="task.js"></script>
+    <!-- <script src="theme.js"></script> -->
+</body>
+
+</html>

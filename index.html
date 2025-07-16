@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard || Main</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="row">
+            <img src="./picture/codingAge-removebg-preview.png" alt="">
+            <h1>CODING <span>AGE</span></h1>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i> <!-- Font Awesome icon -->
+        </div>
+        <ul class="lists">
+            <li class="active"><a href="./index.html"><i class="ri-dashboard-horizontal-fill"></i> Dashboard</a></li>
+            <li><a href="./studetn.html"><i class="ri-team-fill"></i> Students</a></li>
+            <li><a href="./task.html"><i class="ri-list-check-3"></i> Tasks</a></li>
+            <li><a href="./gallary.html"><i class="ri-gallery-fill"></i> Gallary</a></li>
+            <li><a href="./courses.html"><i class="ri-contacts-book-3-fill"></i> Courses</a></li>
+            <li><a href="./add.html"><i class="ri-add-box-fill"></i> Add Student</a></li>
+        </ul>
+        <a href="" class="logout"><i class="ri-logout-box-r-line"></i> Logout</a>
+    </nav>
+    <!-- ----- Main Section ----- -->
+    <main>
+        <div class="hero" id="hero">
+            <div class="up-row" id="uprow">
+                <h1>Dashboard</h1>
+                <div class="left-dash">
+                    <div class="btns">
+                        <button id="day" class="btn day"><i class="ri-sun-fill"></i></button>
+                        <button id="night" class="btn night"><i class="ri-moon-fill"></i></button>
+                    </div>
+                    <p>Hey, <span>Vivek Anand</span></p>
+                    <img src="./picture/user_11851046.png" alt="">
+                </div>
+
+            </div>
+            <!-- Totals -->
+            <div class="dw-row">
+                <div class="totals">
+                    <input type="date" name="calander" class="calander" id="calander">
+                    <div class="t-boxes">
+                        <div class="tbox" id="tbox">
+                            <div class="tl">
+                                <i class="fa-solid fa-arrow-up-right-dots"></i>
+                                <p>Total Sales</p>
+                                <h4>$25,024</h4>
+                                <p id="time">Last 24 Hours</p>
+                            </div>
+                            <div class="tr">
+                                <div class="pr">
+                                    <p>81%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbox" id="tbox">
+                            <div class="tl">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <p>Total Expenses</p>
+                                <h4>$41,160</h4>
+                                <p id="time">Last 24 Hours</p>
+                            </div>
+                            <div class="tr">
+                                <div class="pr">
+                                    <p>62%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbox" id="tbox">
+                            <div class="tl">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <p>Total Income</p>
+                                <h4>$10,864</h4>
+                                <p id="time">Last 24 Hours</p>
+                            </div>
+                            <div class="tr">
+                                <div class="pr">
+                                    <p>42%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recent Orders -->
+                    <div class="r-orders" id="tb">
+                        <h4>Recent Orders</h4>
+                        <div class="tb">
+                            <table id="table" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Product Name</th>
+                                        <th>Product Number</th>
+                                        <th>Payment</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Foldable Mini Drone</td>
+                                    <td>85632</td>
+                                    <td>Deu</td>
+                                    <td class="pending">Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Foldable Mini Drone</td>
+                                    <td>85632</td>
+                                    <td>Deu</td>
+                                    <td class="pending">Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Foldable Mini Drone</td>
+                                    <td>85632</td>
+                                    <td>Deu</td>
+                                    <td class="pending">Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Foldable Mini Drone</td>
+                                    <td>85632</td>
+                                    <td>Deu</td>
+                                    <td class="pending">Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Foldable Mini Drone</td>
+                                    <td>85632</td>
+                                    <td>Deu</td>
+                                    <td class="pending">Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Foldable Mini Drone</td>
+                                    <td>85632</td>
+                                    <td>Deu</td>
+                                    <td class="pending">Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Foldable Mini Drone</td>
+                                    <td>85632</td>
+                                    <td>Deu</td>
+                                    <td class="pending">Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Foldable Mini Drone</td>
+                                    <td>85632</td>
+                                    <td>Deu</td>
+                                    <td class="pending">Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Foldable Mini Drone</td>
+                                    <td>85632</td>
+                                    <td>Deu</td>
+                                    <td class="pending">Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Foldable Mini Drone</td>
+                                    <td>85632</td>
+                                    <td>Deu</td>
+                                    <td class="pending">Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Foldable Mini Drone</td>
+                                    <td>85632</td>
+                                    <td>Deu</td>
+                                    <td class="pending">Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recent Updates -->
+                <div class="recent left-dw">
+                    <h4>Recent Updates</h4>
+                    <div id="updates" class="updates">
+                        <div class="ud-row">
+                            <img src="./picture/user_11851046.png" alt="">
+                            <div class="ud-ct">
+                                <p><b>Mike Tyson</b> recieved his order of Night lion tech GPS drone </p>
+                                <p>2 Minutes Ago </p>
+                            </div>
+                        </div>
+                        <div class="ud-row">
+                            <img src="./picture/user_11851046.png" alt="">
+                            <div class="ud-ct">
+                                <p><b>Mike Tyson</b> recieved his order of Night lion tech GPS drone </p>
+                                <p>2 Minutes Ago </p>
+                            </div>
+                        </div>
+                        <div class="ud-row">
+                            <img src="./picture/user_11851046.png" alt="">
+                            <div class="ud-ct">
+                                <p><b>Mike Tyson</b> recieved his order of Night lion tech GPS drone </p>
+                                <p>2 Minutes Ago </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sales Analytics -->
+                    <h4>Sales Analytics</h4>
+                    <div class="sales-analytics">
+                        <div id="anrow" class="sl-row">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="sl-or">
+                                <h6>ONLINE ORDERS</h6>
+                                <p>Last 24 Hours</p>
+                            </div>
+                            <p id="plus">+39%</p>
+                            <p id="total">3849</p>
+                        </div>
+                        <div id="anrow" class="sl-row">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <div class="sl-or">
+                                <h6>OFFLINE ORDERS</h6>
+                                <p>Last 24 Hours</p>
+                            </div>
+                            <p id="plus">-17%</p>
+                            <p id="total">1100</p>
+                        </div>
+                        <div id="anrow" class="sl-row">
+                            <i class="fa-solid fa-user"></i>
+                            <div class="sl-or">
+                                <h6>NEW CUSTOMERS</h6>
+                                <p>Last 24 Hours</p>
+                            </div>
+                            <p id="plus">+25%</p>
+                            <p id="total">8491</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <!-- <script src="theme.js"></script> -->
+</body>
+
+</html>
